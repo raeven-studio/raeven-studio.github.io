@@ -45,6 +45,10 @@ body, html {
     flex-grow: 0;
     margin: 0;
     font-size: 7em;
+    animation: fadein 1.35s;
+    -webkit-animation: fadein 1.35s;
+    -moz-animation: fadein 1.35s; 
+    -ms-animation: fadein 1.35s; 
 }
 
 .title .studio {
@@ -58,10 +62,52 @@ body, html {
     font-size: 1.25em;
     flex-grow: 0;
     margin: 0;
+    animation: fadeinlate 2.25s;
+    -webkit-animation: fadeinlate 2.25s;
+    -moz-animation: fadeinlate 2.25s;
+    -ms-animation: fadeinlate 2.25s;
+
 }
 
 @media (max-width: 768px){
     .title {
         font-size: 2.5em;
     }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1;}
+}
+
+@keyframes fadeinlate {
+    0% { opacity: 0; transform: scale(0.95);}
+    40% { opacity: 0; transform: scale(0.95);}
+    100% { opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; transform: scale(0.9);}
+    to   { opacity: 1;}
+}
+
+@-webkit-keyframes fadeinlate {
+    0% { opacity: 0; transform: scale(0.95);}
+    40% { opacity: 0; transform: scale(0.95);}
+    100% { opacity: 1;}
+}
+
+@-ms-keyframes fadein {
+    from { 
+        opacity: 0;
+        transform: scale(0.9); 
+    }
+    to   { opacity: 1;}
+}
+
+@-ms-keyframes fadeinlate {
+    0% { opacity: 0; transform: scale(0.95);}
+    40% { opacity: 0; transform: scale(0.95);}
+    100% { opacity: 1;}
 }
