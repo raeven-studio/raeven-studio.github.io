@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Crimson Text Italic Bold';
+    font-style: italic;
+    font-weight: bold;
+    src: url('resources/fonts/CrimsonText-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('resources/fonts/CrimsonText-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Mayflower Italic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('resources/fonts/Mayflower-Italic.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+}
+
+.container {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    flex: 1;
+    overflow-y: hidden;
+    font-family: 'Crimson Text Italic Bold';
+    flex-grow: 0;
+    margin: 0;
+    font-size: 7em;
+}
+
+.title .studio {
+    font-family: 'Crimson Text';
+    font-weight: 400;
+}
+
+.soon {
+    font-family: 'Mayflower Italic';
+    flex: 2;
+    font-size: 1.25em;
+    flex-grow: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    .title {
+        font-size: 2.5em;
+    }
+}
