@@ -41,7 +41,8 @@ body, html {
 .title {
     flex: 1;
     overflow-y: hidden;
-    font-family: 'Crimson Text Italic Bold';
+    font-family: 'Crimson Text Italic Bold', serif;
+    font-style: italic;
     flex-grow: 0;
     margin: 0;
     font-size: 7em;
@@ -52,8 +53,9 @@ body, html {
 }
 
 .title .studio {
-    font-family: 'Crimson Text';
+    font-family: 'Crimson Text', serif;
     font-weight: 400;
+    font-style: normal;
 }
 
 .soon {
